@@ -309,14 +309,16 @@
 
     .form__title {
         font-size: 14px;
+        padding: 30px 30px 40px;
     }
 
     .form__input {
         width: 240px;
+        margin: 0 20px 30px;;
     }
 
     .form__button {
         width: 288px;
-        margin-top: 73px;
+        margin-top: 92px;
     }
 }
