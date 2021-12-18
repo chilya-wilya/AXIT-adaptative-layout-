@@ -1,12 +1,15 @@
 {
-  "name": "my-project",
-  "source": "./src/index.html",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.1",
-    "parcel": "latest"
-  },
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
-  }
+    "name": "my-project",
+    "source": "./src/index.html",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.0.1",
+        "parcel": "latest"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4"
+    }
 }
