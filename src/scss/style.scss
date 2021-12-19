@@ -326,26 +326,184 @@
 }
 
 .info-tab {
-    height: 100vh;
     width: 100%;
 
     .social-media {
         height: 140px;
         background-color: $light-pink;
         display: flex;
-        padding: 40px 170px 0;
+        margin-bottom: 100px;
 
-        &__title h3 {
-            font-size: 24px;
-            margin-bottom: 25px;
+        &__title {
+            margin: 20px 50px 0 170px;
+            width: 470px;
+
+            h3 {
+                font-size: 24px;
+                margin-bottom: 25px;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                }
+            
+            p {
+                font-size: 18px;
+                color: $gray;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 400;
+            }
+
         }
-
+        
         &__icons {
             color: $gray;
             font-size: 47px;
-            margin-left: auto;
             display: flex;
             gap: 50px;
+            align-self: center;
+        }
+    }
+
+    .tab-wrapper {
+        display: flex;
+        margin-left: 140px;
+
+        &__tab {
+            margin: 30px 0 0 30px;
+            width: 170px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(0, 1px);
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &__tab:first-of-type {
+            border-top: 1px solid $gray;
+            border-left: 1px solid $gray;
+            border-right: 1px solid $gray;
+            border-bottom: 3px solid $white;
+        }
+    }
+
+    .container {
+        height: 500px;
+        width: 1170px;
+        display: flex;
+        border: 1px solid $gray;
+        margin: 0 auto 150px;
+        
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            justify-content: center;
+            
+            &__title {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 30px;
+                font-weight: 700;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+
+            &__text {
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: left;
+                margin-bottom: 27px;
+            }
+
+            &__button {
+                height: 58px;
+                width: 270px;
+                border: none;
+                background-color: $pink;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+                color: $white;
+            }
+
+        }
+    }
+
+    .title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 110px;
+
+        &__title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+
+        &__line {
+            width: 170px;
+            height: 2px;
+            border-bottom: 1px solid $pink;
+            margin-bottom: 40px;
+        }
+
+        &__text {
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #86878B;
+        }
+    }
+
+    .awesome-wrapper {
+        display: flex;
+        gap: 40px;
+        margin: 0 auto 58px;
+        width: 1170px;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 370px;
+
+            &__image {
+                width: 92px;
+                height: 92px;
+                border-radius: 100%;
+                border: 1px solid $pink;
+                margin-bottom: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__title {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            &__text {
+                font-family: 'Raleway', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-align: center;
+            }
         }
     }
 }
